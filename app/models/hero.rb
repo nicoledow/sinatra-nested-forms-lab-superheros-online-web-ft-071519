@@ -1,5 +1,5 @@
 class Hero
-  attr_accessor :name, 
+  attr_accessor :name, :power, :motto
   
   
   
