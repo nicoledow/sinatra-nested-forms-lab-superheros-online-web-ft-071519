@@ -11,7 +11,7 @@ class App < Sinatra::Base
     
     post '/teams' do
       @team = Team.new(params["team"]["name"], params["team"]["motto"])
-      binding.pry
+      #binding.pry
       @team_members_arr = params["team"]["members"]
       
       erb :team
