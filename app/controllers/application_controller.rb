@@ -13,6 +13,9 @@ class App < Sinatra::Base
       @team = Team.new(params["team"]["name"], params["team"]["motto"])
       binding.pry
       @team_members_arr = params["team"]["members"]
+      @team_members_arr.each do |hero|
+        
+      end
       erb :team
     end
 
