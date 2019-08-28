@@ -6,7 +6,7 @@
 <ul>
 <% @team_members_arr.each_with_index do |hero, i| %>
   <li>Hero Name: <%= @team_members_arr[i]["name"] %></li>
-  <li>Hero Power
+  <li>Hero Power: <%= @team_members_arr[i]["power"] %></li>
 <% end %>
 </ul>
 
